@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Report - MediSummarizer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+ 
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">MediSummarizer</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+    </div>
+  </nav>
+
+  <section class="upload-section">
+    <h2>Upload Your Medical Report</h2>
+    <input type="file" id="fileInput" accept=".pdf">
+    <button onclick="handleUpload()" class="btn">Summarize</button>
+  </section>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

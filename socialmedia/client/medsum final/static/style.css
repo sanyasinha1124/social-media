@@ -1,0 +1,82 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    background: #4F46E5;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #666;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: #4F46E5;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #4338CA;
+  }
+  
+  .upload-section, .summary-section {
+    max-width: 600px;
+    margin: 80px auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  input[type="file"] {
+    margin: 1rem 0;
+  }
+  
+  .summary-box {
+    background: #f0f0
+  }  

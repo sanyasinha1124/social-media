@@ -1,0 +1,2 @@
+clerk is providing us with user data and to do that it uses clerk webhooks
+to manage these webhooks we uses ingest

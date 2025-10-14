@@ -1,0 +1,8 @@
+npm install lucide-react :-
+ lucide package to add icons in the project
+ 
+ npm install lucide-react
+ import { Camera, Search, Heart } from "lucide-react";
+ <Camera color="blue" size={32} />
+
+ The moment package (also known as Moment.js) is a JavaScript library for working with dates and times easily and consistently across browsers and time zones.(like 10 hr ago,1 day ago)
