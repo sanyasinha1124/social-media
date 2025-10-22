@@ -77,15 +77,15 @@
 // // Create an empty array where we'll export future Inngest functions
 // export const functions = [
 //   syncUserCreation,
-//   syncUserUpdation,
+//   syncUpdation,
 //   syncUserDeletion
 // ];
 
 import { Inngest } from "inngest";
-import User from "../models/user.js";
+import User from "../models/User.js"; // ✅ FIXED
 
 // ✅ Create Inngest client
-export const inngest = new Inngest({ id: "Ping-Up" });
+export const inngest = new Inngest({ id: "ping-up" });
 
 // ✅ Function: Create new user from Clerk
 const syncUserCreation = inngest.createFunction(
@@ -133,7 +133,7 @@ const syncUserUpdation = inngest.createFunction(
 
 // ✅ Function: Delete user data
 const syncUserDeletion = inngest.createFunction(
-  { id: "delete-user-from-clerk" },
+  { id: "delete-user-with-clerk" },
   { event: "clerk/user.deleted" },
   async ({ event }) => {
     const { id } = event.data;
